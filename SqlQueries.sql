@@ -75,6 +75,13 @@ FROM public."Demographic Statistics"
 WHERE "JURISDICTION NAME" BETWEEN 11374 AND 11375
 GROUP BY 1,2,3,4,5,6,7,8;
 
+5. Returning the jurisdiction name which has the highest percent of Asian population:
+
+SELECT "JURISDICTION NAME", "PERCENT ASIAN NON HISPANIC"
+FROM public."Demographic Statistics"
+GROUP BY 1, 2
+ORDER BY 2 DESC;
+
 
 
 
