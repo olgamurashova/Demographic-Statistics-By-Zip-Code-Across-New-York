@@ -60,12 +60,21 @@ ALTER TABLE IF EXISTS public."Demographic Statistics"
 COPY Public."Demographic Statistics"
 FROM 'C:\Users\omdre\OneDrive\Desktop\Codecademy\Demographic Statistics By Zip Code\Demographic_Statistics_By_Zip_Code.csv'
 
-3. Gouping data to find out which jurisdiction/zip code had most participants with breakdown by gender:
+3. Grouping data to find out which jurisdiction/zip code had most participants with breakdown by gender:
 
 SELECT "JURISDICTION NAME", "COUNT PARTICIPANTS", "COUNT FEMALE", "COUNT MALE", "COUNT GENDER UNKNOWN"
 FROM public."Demographic Statistics"
 GROUP BY 1, 2, 3, 4, 5
 ORDER BY 2 DESC;
+
+4. Returning ethnic composition in 11374 and 11375 zip codes:
+
+SELECT "JURISDICTION NAME", "PERCENT PACIFIC ISLANDER", "PERCENT HISPANIC LATINO", "PERCENT AMERICAN INDIAN",
+"PERCENT ASIAN NON HISPANIC", "PERCENT WHITE NON HISPANIC", "PERCENT BLACK NON HISPANIC", "PERCENT OTHER ETHNICITY"
+FROM public."Demographic Statistics"
+WHERE "JURISDICTION NAME" BETWEEN 11374 AND 11375
+GROUP BY 1,2,3,4,5,6,7,8;
+
 
 
 
