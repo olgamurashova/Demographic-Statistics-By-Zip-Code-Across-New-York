@@ -60,5 +60,12 @@ ALTER TABLE IF EXISTS public."Demographic Statistics"
 COPY Public."Demographic Statistics"
 FROM 'C:\Users\omdre\OneDrive\Desktop\Codecademy\Demographic Statistics By Zip Code\Demographic_Statistics_By_Zip_Code.csv'
 
-3. 
+3. Gouping data to find out which jurisdiction/zip code had most participants with breakdown by gender:
+
+SELECT "JURISDICTION NAME", "COUNT PARTICIPANTS", "COUNT FEMALE", "COUNT MALE", "COUNT GENDER UNKNOWN"
+FROM public."Demographic Statistics"
+GROUP BY 1, 2, 3, 4, 5
+ORDER BY 2 DESC;
+
+
 
