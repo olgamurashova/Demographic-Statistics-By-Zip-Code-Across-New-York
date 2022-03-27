@@ -82,6 +82,12 @@ FROM public."Demographic Statistics"
 GROUP BY 1, 2
 ORDER BY 2 DESC;
 
+6. Filtering the data to return permanent resident aliens percent and citizen percent by zip code:
+
+SELECT "JURISDICTION NAME", "PERCENT PERMANENT RESIDENT ALIEN", "PERCENT US CITIZEN"
+FROM public."Demographic Statistics"
+GROUP BY 1, 2, 3;
+
 
 
 
