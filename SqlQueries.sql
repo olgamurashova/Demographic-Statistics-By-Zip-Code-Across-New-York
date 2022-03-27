@@ -88,6 +88,16 @@ SELECT "JURISDICTION NAME", "PERCENT PERMANENT RESIDENT ALIEN", "PERCENT US CITI
 FROM public."Demographic Statistics"
 GROUP BY 1, 2, 3;
 
+7. Filtering 10 zip codes with highest public assistance percent:
+
+SELECT "JURISDICTION NAME", "PERCENT NRECEIVES PUBLIC ASSISTANCE"
+FROM public."Demographic Statistics"
+GROUP BY 1, 2
+ORDER BY 2 DESC
+LIMIT 10;
+
+
+
 
 
 
