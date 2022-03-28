@@ -9,4 +9,8 @@ In this project, I analyzed demographic statistics across New York State broken 
 
 + SQL
 + PostgreSQL
++ Python
++ Pandas
++ Anaconda
++ Jupyter Notebook
 
