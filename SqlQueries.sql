@@ -58,7 +58,7 @@ ALTER TABLE IF EXISTS public."Demographic Statistics"
 2. Importing dataset:
 
 COPY Public."Demographic Statistics"
-FROM 'C:\Users\omdre\OneDrive\Desktop\Codecademy\Demographic Statistics By Zip Code\Demographic_Statistics_By_Zip_Code.csv'
+FROM 'C:\Users\omdre\OneDrive\Desktop\Codecademy\Demographic Statistics By Zip Code\Demographic_Statistics_By_Zip_Code.csv' DELIMITER ',' CSV HEADER;
 
 3. Grouping data to find out which jurisdiction/zip code had most participants with breakdown by gender:
 
